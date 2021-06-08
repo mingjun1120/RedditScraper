@@ -29,5 +29,5 @@ Hi there 👋 This Reddit Scrapper is my first Selenium Python project that I ha
 # Example
 * In this project, I specified _UncleRoger_ and _badminton_ at **line 169** in `scrap_reddit.py`. E.g. **`SUBREDDIT = ['r/UncleRoger', 'r/badminton']`**.
 * Sorting type that I used was **`SORT = 'top'`** at **line 172** in `scrap_reddit.py`.
-* Since I use _**top**_ as my _sorting type_, so I can specify timespan for this program at **line 176**. E.g. **`TIME = 'month'`**.
+* Since I use _**top**_ as my _**sorting type**_, so I can specify timespan for this program at **line 176**. E.g. **`TIME = 'month'`**. Otherwise, no need to specify timespan
 * Finally, I try to open up the link that will formed at **line 181** in browser to check whether it can be browsed. If yes, run the program. Otherwise, double check the link.
