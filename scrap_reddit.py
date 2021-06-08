@@ -38,7 +38,7 @@ def user_login():
 
     # Enter username
     usernameField = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="loginUsername"]')))
-    usernameField.send_keys(config('USERNAME', cast=str))
+    usernameField.send_keys(config('MYUSERNAME', cast=str))
 
     # Enter password
     passwordField = driver.find_element_by_name('password')
@@ -162,7 +162,7 @@ def collect_subData(number, postlinkaddress, post_lst_details):
     }
     post_lst_details.append(post_info)
     print("    Done\n")
-    time.sleep(8)
+    time.sleep(5)
 
 
 HTTPS = "https://www.reddit.com/"
@@ -188,7 +188,7 @@ for sub in SUBREDDIT:
         user_login()
 
         # Scroll 3 times for more posts shown on the screen
-        n_scrolls = 2
+        n_scrolls = 3
         while True:
             n_scrolls -= 1
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -229,7 +229,7 @@ for sub in SUBREDDIT:
         time.sleep(6)
 
         # Scroll 3 times for more posts shown on the screen
-        n_scrolls = 2
+        n_scrolls = 3
         while True:
             n_scrolls -= 1
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
