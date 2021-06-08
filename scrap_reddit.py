@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import*
+from decouple import config
 import time
 import datetime
 import pandas as pd
@@ -37,11 +38,11 @@ def user_login():
 
     # Enter username
     usernameField = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="loginUsername"]')))
-    usernameField.send_keys('JuroyLim')
+    usernameField.send_keys(config('USERNAME', cast=str))
 
     # Enter password
     passwordField = driver.find_element_by_name('password')
-    passwordField.send_keys('5757811-xxb')
+    passwordField.send_keys(config('PASSWORD', cast=str))
 
     # Click the login button
     driver.find_element_by_xpath("//button[contains(text(), 'Log In')]").click()
