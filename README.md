@@ -20,7 +20,7 @@ Hi there 👋 This Reddit Scrapper is my first Selenium Python project that I ha
   2. `PASSWORD=**Your_Reddit_Account_Password**`
 
 * Specify the subreddits you want to scrape at **line 169** in `scrap_reddit.py`. The list variable `SUBREDDIT` will store all subreddits specified by user
-* Specify the sorting type you want at **line 172** in `scrap_reddit.py`. The variable `SORT` will store the type specified by user
+* Specify the sorting type you want at **line 172** in `scrap_reddit.py`. The variable **`SORT`** will store the type specified by user
   1. Sorting typed are set to _**hot**_, _**new**_, _**rising**_ or _**top**_
 * Specify the timespan you want **line 176** in `scrap_reddit.py` but timespan is **only applicable** for the _**top** sorting type_
 * **Finnaly**, run `scrap_reddit.py`
