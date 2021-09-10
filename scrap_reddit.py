@@ -53,6 +53,7 @@ def user_login():
     driver.switch_to.default_content()
 
 def collect_subData(number, postlinkaddress, post_lst_details):
+    # sourcery no-metrics
 
     print('{}. PROCESSING -> {}'.format(number, postlinkaddress))
 
